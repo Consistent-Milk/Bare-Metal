@@ -1,9 +1,9 @@
-#include <stdio.h>
-
 // todo
 // 1. declare an int array of size 5
 // 2. init array with all 0
 // 3. pretty print index and value
+
+#include <stdio.h>
 
 int main(void)
 {
