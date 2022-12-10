@@ -21,6 +21,6 @@ int main(void)
     puts("");
     for (size_t i = 0; i < 5; ++i)
     {
-        printf("%5d%8d\n", i, array[i]);
+        printf("%5zu%8d\n", i, array[i]);
     }
 }
