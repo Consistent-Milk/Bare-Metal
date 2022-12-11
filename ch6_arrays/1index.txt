@@ -1,0 +1,12 @@
+* Marked are important CS algorithms related sorting, searching, data structures etc
+
+6_01 -> Declaring and initializing an array + Pretty Printing Basics
+6_03 -> Initializing an array with formulaic values dependent on index
+6_04 -> Computing the sum of the elements of an array
+6_05 -> Bound Checking and a bit tricky usage of array syntax
+6_07 -> Counting the frequency of random die throwing (6_000_000_00 times)
+6_11 -> Modifying an array by passing it to a function
+*6_12 -> Bubble Sort
+6_13 -> Unnecessarily large mean, median, mode finding program from a given array
+*6_14 -> Linear Search
+*6_15 -> Binary Search

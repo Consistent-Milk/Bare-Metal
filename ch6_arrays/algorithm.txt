@@ -1,0 +1,9 @@
+1 -> Find an equation of a straight line
+Input -> B(3, -3) | The required line will be parallel to PQ
+
+Refinement : The required line will be parallel to PQ
+-> The slope of the line will be the same as PQ 
+    -> New Input -> Slope, m = - 4/9
+
+Search for Process -> y - y1 = m(x-x1) -> This will be the required line
+                   -> Are all inputs for the process available? 
