@@ -40,8 +40,12 @@ int main(void)
         }
     }
 
-    for (size_t i = 2; i <= 10; ++i)
+    for (size_t i = 2; i <= 9; ++i)
     {
-        printf("Salary in range salesRange[%zu] = %d\n", i, salesRange[i]);
+        int low = i * 100;
+        int high = ((i + 1) * 100) - 1;
+        printf("Salary in range salesRange[%zu](%d - %d) = %d\n", i, low, high, salesRange[i]);
     }
+
+    printf("Salary in range salesRange[%d](>1000) = %d\n", 10, salesRange[10]);
 }
