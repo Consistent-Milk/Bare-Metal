@@ -17,7 +17,7 @@ int main(void)
     // Generate employee gross sales array
     // Upper bound being 10000
     // Highest commision will be 900
-    // Lowest salary 0
+    // Lowest salary 200 (with 0 sales)
     // Highest salary 1100
     for (size_t i = 0; i < EMPLOYEE; ++i)
     {
