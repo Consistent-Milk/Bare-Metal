@@ -1,0 +1,4 @@
+* Marked are important CS algorithms related sorting, searching, data structures etc
+
+6_10 -> Ingenious use of array indices to bypass switch/if-else blocks
+*6_11 -> Improved Bubble Sort 
