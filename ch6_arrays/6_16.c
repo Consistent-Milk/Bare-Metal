@@ -19,10 +19,10 @@ int main(void)
 
 void printArray(int a[][3])
 {
-    // loop through rows
+    // loop through rows (0-1)
     for (size_t i = 0; i <= 1; ++i)
     {
-        // output column values
+        // output column values (0-2)
         for (size_t j = 0; j <= 2; ++j)
         {
             printf("%d ", a[i][j]);
