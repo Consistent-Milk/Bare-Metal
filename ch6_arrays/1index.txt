@@ -10,3 +10,4 @@
 6_13 -> Unnecessarily large mean, median, mode finding program from a given array
 *6_14 -> Linear Search
 *6_15 -> Binary Search
+6_16 -> Multidimensional Arrays
