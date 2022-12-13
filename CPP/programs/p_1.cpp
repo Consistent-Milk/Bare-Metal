@@ -41,11 +41,11 @@ int main()
     // duration<double, milli> diff1 = t2 - t1;
 
     auto t1 = high_resolution_clock::now();
-    BigNumber fib2 = iter_fib(150);
+    BigNumber fib2 = iter_fib(1000);
     auto t2 = high_resolution_clock::now();
     duration<double, milli> diff2 = t2 - t1;
 
     // cout << 35 << "\t" << fib1 << "\t\t" << diff1.count() << "\t\t" << fib2 << "\t\t" << diff2.count() << "\n";
-    cout << 150 << "\t" << fib2 << "\t\t" << diff2.count() << "\n\n\n";
+    cout << 1000 << "\t" << fib2 << "\t\t" << diff2.count() << "\n\n\n";
     return 0;
 }
