@@ -18,4 +18,5 @@ for i in range(10):
 directory_list.append('ch_20')
 
 for index, directory in enumerate(directory_list):
-    os.makedirs(directory)
+    if directory not in os.listdir():
+        os.makedirs(directory)
