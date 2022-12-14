@@ -16,6 +16,8 @@ int main()
 
     std::cout << "\n\n";
 
+    // Using class template argument deduction to determine
+    // values2's type
     std::array values2{1.2, 2.2, 3.3, 4.4};
 
     for (size_t i{0}; i < values2.size(); ++i)
