@@ -22,12 +22,27 @@ int main()
             std::cout << "\n";
         }};
 
-    auto array1{std::views::iota(1, 11)};
+    auto array1 = std::views::iota(1, 11);
     showValues(array1, "Generate integers 1-10");
 
     // Lambda function to filter even integers
-    auto array2{array1 | std::views::filter(
-                             [](const auto &x)
-                             { return x % 2 == 0; })};
+    auto array2 = array1 | std::views::filter(
+        [](const auto &x)
+        { return x % 2 == 0; });
     showValues(array2, "Filtering even integers");
+
+    // Lambda function to map even integers to their squares
+    auto array3 = array2 | std::views::transform(
+        [](const auto &x)
+        { return x * x; }
+    );
+    showValues(array3, "Mapping even integers to squares");
+
+    // Lambda function combining filter and transform
+    auto array4 = array1 | std::views::filter([](const auto& x) {return x % 2 == 0;})
+              | std::views::transform([](const auto& x) {return x * x; });
+    showValues(array4, "Squares of even integers");
+    
+
+    std::cout << "\n\n";
 }
