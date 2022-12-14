@@ -1,0 +1,6 @@
+array_1 via displayArray: 4 2 7 19 15 
+array_1 via displaySpan: 4 2 7 19 15 
+array_2 via displaySpan: 4 2 7 19 15 
+array_3 via displaySpan: 4 2 7 19 15 
+
+array_1 after times2 modifies its span argument: 8 4 14 38 30 
