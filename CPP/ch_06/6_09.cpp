@@ -1,34 +1,45 @@
-#include <iostream>
+// STL
 #include <array>
-
-constexpr size_t rows{2};
-constexpr size_t columns{3};
-void printArray(const std::array<std::array<int, columns>, rows> &a);
+#include <algorithm> // contains sort and binary_search
+#include <iostream>
+#include <string>
+// TPL
+#include <fmt/format.h>
 
 int main()
 {
-    constexpr std::array array1{std::array{1, 2, 3}, std::array{4, 5, 6}};
-    constexpr std::array array2{std::array{1, 2, 3}, std::array{4, 5, 0}};
+    using namespace std::string_literals; // enables string object literals
 
-    std::cout << "array1 by row:\n";
-    printArray(array1);
+    // colors is inferred to be an array<string, 7>
+    std::array colors{"red"s, "orange"s, "yellow"s,
+                      "green"s, "blue"s, "indigo"s, "violet"s};
 
-    std::cout << "\narray2 by row:\n";
-    printArray(array2);
-}
-
-// output array with two rows and three columns
-void printArray(const std::array<std::array<int, columns>, rows> &a)
-{
-    // loop through array's rows
-    for (const auto &row : a)
+    // output original array
+    std::cout << "Unsorted colors array:\n   ";
+    for (const std::string &color : colors)
     {
-        // loop through columns of current row
-        for (const auto &element : row)
-        {
-            std::cout << element << " ";
-        }
-
-        std::cout << "\n"; // start new line of output
+        std::cout << fmt::format("{} ", color);
     }
+
+    // sort contents of colors
+    std::sort(std::begin(colors), std::end(colors));
+
+    // output sorted array
+    std::cout << "\nSorted colors array:\n   ";
+    for (const std::string &color : colors)
+    {
+        std::cout << fmt::format("{} ", color);
+    }
+
+    // search for "indigo" in colors
+    bool found{std::binary_search(
+        std::begin(colors), std::end(colors), "indigo")};
+    std::cout << fmt::format("\n\n\"indigo\" {} found in colors array\n",
+                             found ? "was" : "was not");
+
+    // search for "cyan" in colors
+    found = std::binary_search(
+        std::begin(colors), std::end(colors), "cyan");
+    std::cout << fmt::format("\"cyan\" {} found in colors array\n",
+                             found ? "was" : "was not");
 }
