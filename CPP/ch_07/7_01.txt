@@ -1,0 +1,4 @@
+The address of a is 0x32d7ffacc
+The value of aPtr is 0x32d7ffacc
+The value of a is7
+The value of *aPtr is 7
