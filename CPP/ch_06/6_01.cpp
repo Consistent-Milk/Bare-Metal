@@ -18,7 +18,7 @@ int main()
     // Initialize all elements of array to 0
     for (size_t i{0}; i < values.size(); ++i)
     {
-        // Get random values from PRNG
+        // Get random values from PRNG distribution
         values[i] = prng(engine);
     }
 
