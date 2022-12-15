@@ -1,0 +1,20 @@
+s1: red
+s2: red
+v1: red
+
+string_views see changes to the characters they view
+s1: Red
+s2: red
+v1: Red
+
+string_view can remove a prefix or a suffix from the string it is viewing
+s1: Red
+v1: e
+
+string_view are iterable
+The characters in v3 are: C - S t r i n g 
+
+string_view enable various string operations
+v3.size(): 8
+v3.find('-'): 1
+v3.starts_with('C'): true
