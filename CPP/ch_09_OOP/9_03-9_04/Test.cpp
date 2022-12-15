@@ -3,7 +3,7 @@
 #include <fstream>
 // TPL
 #include <fmt/format.h>
-// Custom Headers
+// CH
 #include "Account.hpp"
 
 int main()
@@ -21,9 +21,9 @@ int main()
 
         file << fmt::format("account1 name is: {}\n", account1.getName());
         file << fmt::format("account2 name is: {}\n", account2.getName());
-
-        file.close();
-
-        std::cout << "fstream closed\n\n";
     }
+
+    file.close();
+
+    std::cout << "fstream closed\n\n";
 }

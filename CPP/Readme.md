@@ -1,6 +1,8 @@
 -> Compiled using --std=gnu++23 (Important because many methods are not implemented in the default selection,
 which is usually --std=gnu++17)
 
+-> STL = Standard Library, TPL = Third-party Library, CH = Custom Header
+
 -> Compiling using external libraries may become a bit complex on VSCode if done directly through command shell.
 
 An example command of using BigNumber to compile a program file is as follows(This is only for 3_05.cpp program):

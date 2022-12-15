@@ -4,7 +4,7 @@
 #include <fstream>
 // TPL
 #include <fmt/format.h>
-// Custom Headers
+// CH
 #include "Account.hpp"
 
 int main()
@@ -26,9 +26,9 @@ int main()
         myAccount.setName(name);
 
         file << fmt::format("Updated account name is: {}\n", myAccount.getName());
-
-        file.close();
-
-        std::cout << "\n\nfstream closed\n\n";
     }
+
+    file.close();
+
+    std::cout << "\n\nfstream closed\n\n";
 }
