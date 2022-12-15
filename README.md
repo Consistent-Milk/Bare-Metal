@@ -1,5 +1,7 @@
 Just practicing coding in C and C++.
 
+GCC(12.2, 15th December 2022) doesn't seem to support the format header. Hence using fmt to keep things cross-platform.
+
 ## Awesome References:
 
 1. https://deitel.com/c-how-to-program-9-e/
