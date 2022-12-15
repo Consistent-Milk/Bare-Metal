@@ -1,0 +1,4 @@
+Before swap:
+ s1 -> one 	 s2 -> two
+After swap:
+ s1 -> two 	 s2 -> one

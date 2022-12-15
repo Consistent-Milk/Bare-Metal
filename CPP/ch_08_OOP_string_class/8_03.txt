@@ -1,0 +1,3 @@
+Using substr method of the string class
+substr(start, substring length from start position)
+(airplane).substr(3, 4)): plan

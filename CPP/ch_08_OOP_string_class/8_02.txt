@@ -1,0 +1,15 @@
+s1: Testing the comparison functions
+s2: Hello
+s3: stranger
+s4: Hello
+Comparing s1 and s3
+s1.compare(s2): > 0
+
+Comparing s1 (elements 2-6) and s3 (elements 0-4)
+s1.compare(2, 5, s3, 0, 5) < 0
+
+Comparing s2 and s4
+s4.compare(0, s2.size(), s2) == 0
+
+Comparing s2 and s4
+s2.compare(0, 3, s4) < 0

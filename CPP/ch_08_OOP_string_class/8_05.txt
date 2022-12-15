@@ -1,0 +1,32 @@
+Statistics before input:
+capacity: 15
+max size: 9223372036854775807
+size: 0
+empty: true
+
+Enter a string: The string entered was: First
+Statistics after input:
+capacity: 15
+max size: 9223372036854775807
+size: 5
+empty: false
+
+Enter a string: The string entered was: String
+Statistics after input:
+capacity: 15
+max size: 9223372036854775807
+size: 6
+empty: false
+
+string1 is now: String1234567890abcdefghijklmnopqrstuvwxyz1234567890
+Statistics after concatenation:
+capacity: 52
+max size: 9223372036854775807
+size: 52
+empty: false
+
+Statistics after resizing to add 10 characters:
+capacity: 104
+max size: 9223372036854775807
+size: 62
+empty: false

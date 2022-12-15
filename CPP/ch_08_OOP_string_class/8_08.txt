@@ -1,0 +1,9 @@
+Initial strings:
+s1: beginning end
+s2: 12345678
+
+insert "middle" at location 10
+insert "xx" at location 3
+Strings after insert:
+s1: beginning middle end
+s2: 123xx45678
