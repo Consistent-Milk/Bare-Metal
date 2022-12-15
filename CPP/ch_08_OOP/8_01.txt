@@ -1,0 +1,13 @@
+s1: cat
+s2: cat
+s3: cat
+
+After changes:
+s2: rat
+s3: car
+
+After concatenations:
+s1: catacomb
+s3: carpet
+s4: catapult
+s5: comb
