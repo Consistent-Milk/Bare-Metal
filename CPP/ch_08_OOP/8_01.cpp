@@ -34,5 +34,7 @@ int main()
         std::string s5; // initialized to the empty string
         s5.append(s1, 4, s1.size() - 4);
         myFile << fmt::format("s5: {}", s5);
+
+        myFile.close();
     }
 }
