@@ -1,0 +1,13 @@
+call str to obtain string contents of the ostringstream
+output contains:
+Output of several data types to an ostringstream object:
+double: 123.457
+   int: 22
+add additional characters and call str to output string
+
+
+output now contains:
+Output of several data types to an ostringstream object:
+double: 123.457
+   int: 22
+more characters added
