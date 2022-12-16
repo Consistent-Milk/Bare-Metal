@@ -2,11 +2,11 @@ Display initial balance of each account object
 account_1: John Doe has balance $50.00
 account_2: Jane Doe has balance $0.00
 
-Adding $100.00 to account_1 balance
+Adding $10.00 to account_1 balance
 
-Adding $150.00 to account_2 balance
+Adding $20.00 to account_2 balance
 
 Display modified balance of each account object
-account_1: John Doe has balance $150.00
-account_2: Jane Doe has balance $150.00
+account_1: John Doe has balance $60.00
+account_2: Jane Doe has balance $20.00
 
