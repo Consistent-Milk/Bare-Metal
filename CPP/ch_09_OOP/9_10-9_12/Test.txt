@@ -1,0 +1,21 @@
+Constructed with:
+
+t1: all arguments defaulted
+24-hour time: 00:00:00
+12-hour time: 12:00:00 AM
+
+t2: hour specified; minute and second defaulted
+24-hour time: 02:00:00
+12-hour time: 2:00:00 AM
+
+t3: hour and minute specified; second defaulted
+24-hour time: 21:34:00
+12-hour time: 9:34:00 PM
+
+t4: hour, minute and second specified
+24-hour time: 12:25:42
+12-hour time: 12:25:42 PM
+
+
+attempt to initialize t5 with invalid values
+t5 not created: hour was out of range
