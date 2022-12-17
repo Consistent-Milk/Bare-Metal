@@ -18,3 +18,7 @@ GCC(12.2, 15th December 2022) doesn't seem to support the format header. Hence u
 6. https://github.com/microsoft/GSL
 7. https://github.com/tfussell/miniz-cpp
 8. https://github.com/d99kris/rapidcsv
+
+## Reference for Leetcode Solutions:
+
+1. https://github.com/fengvyi/LeetCode
