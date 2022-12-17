@@ -30,21 +30,20 @@ int main(void)
     }
 }
 
-
 /*
 
 Here we use the STL implementation of an unordered_map.
 
-Unordered map is an associative container that contains 
-key-value pairs with unique keys. Search, insertion, 
+Unordered map is an associative container that contains
+key-value pairs with unique keys. Search, insertion,
 and removal of elements have average constant-time complexity.
 
-Internally, the elements are not sorted in any particular order, 
-but organized into buckets. Which bucket an element is 
-placed into depends entirely on the hash of its key. 
-Keys with the same hash code appear in the same bucket. 
-This allows fast access to individual elements, 
-since once the hash is computed, it refers to the 
+Internally, the elements are not sorted in any particular order,
+but organized into buckets. Which bucket an element is
+placed into depends entirely on the hash of its key.
+Keys with the same hash code appear in the same bucket.
+This allows fast access to individual elements,
+since once the hash is computed, it refers to the
 exact bucket the element is placed into.
 
 The member functions used are:
@@ -63,12 +62,12 @@ Output -> Returns the number of elements matching specific key
 Approach:
 ---------
 1. Declare an unordered_map
-2. Loop through the input vector 
-3. Store (key, value) of unordered map as 
+2. Loop through the input vector
+3. Store (key, value) of unordered map as
 (key: array element, value: array element index)
-4. If map.count(target - array[index]) returns non zero value, 
+4. If map.count(target - array[index]) returns non zero value,
 i.e., there exists a key such that, key + array[index] = target,
-terminate the loop and return [key, index]. 
+terminate the loop and return [key, index].
 */
 std::vector<int> twoSum(std::vector<int> &nums, int target)
 {
