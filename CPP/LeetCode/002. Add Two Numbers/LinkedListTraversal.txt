@@ -1,0 +1,4 @@
+Value at position 0: 8
+Value at position 1: 0
+Value at position 2: 1
+Value at position 3: 2
