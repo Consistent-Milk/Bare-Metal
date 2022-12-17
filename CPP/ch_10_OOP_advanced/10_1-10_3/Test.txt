@@ -1,0 +1,10 @@
+Get SalariedEmployee data
+Employee information obtained by get functions:
+Name: Sue Jones
+Salary: $300.00
+
+Updated employee information from function toString:
+Name: Sue Jones
+Salary: $500.00
+
+Earnings: $500.00
