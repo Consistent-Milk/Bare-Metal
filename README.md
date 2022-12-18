@@ -2,6 +2,8 @@ Just practicing coding in C and C++.
 
 GCC(12.2, 15th December 2022) doesn't seem to support the format header. Hence using fmt to keep things cross-platform.
 
+\*Added .vscode directory for C/C++ settings and tasks.json related to using an msys64 environment on windows.
+
 ## Awesome References:
 
 1. https://deitel.com/c-how-to-program-9-e/
