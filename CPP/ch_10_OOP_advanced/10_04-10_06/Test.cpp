@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 // TPL
+#define FMT_HEADER_ONLY
 #include <fmt/format.h>
 // CH
 #include "SalariedCommissionEmployee.hpp"
@@ -22,9 +23,9 @@ int main()
         // get SalariedCommissionEmployee data
         file << "Employee information obtained by get functions:\n"
              << fmt::format("{}: {}\n{}: {:.2f}\n{}: {:.2f}\n{}: {:.2f}\n",
-                            "name", employee.getName(), "salary", employee.getSalary(),
-                            "gross sales", employee.getGrossSales(),
-                            "commission", employee.getCommissionRate());
+                            "Name", employee.getName(), "salary", employee.getSalary(),
+                            "Gross Sales", employee.getGrossSales(),
+                            "Commission", employee.getCommissionRate());
 
         employee.setGrossSales(8000.0);  // change gross sales
         employee.setCommissionRate(0.1); // change commission rate
@@ -32,7 +33,7 @@ int main()
              << employee.toString();
 
         // display the employee's earnings
-        file << fmt::format("\nearnings: ${:.2f}\n", employee.earnings());
+        file << fmt::format("\nEarnings: ${:.2f}\n", employee.earnings());
     }
     else
     {

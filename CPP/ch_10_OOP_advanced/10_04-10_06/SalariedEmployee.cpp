@@ -1,9 +1,12 @@
 // STL
 #include <stdexcept>
 // TPL
+#define FMT_HEADER_ONLY
 #include <fmt/format.h>
 // CH
 #include "SalariedEmployee.hpp"
+
+using namespace fmt;
 
 // Constructor Definition
 SalariedEmployee::SalariedEmployee(std::string_view name, double salary)

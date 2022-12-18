@@ -1,8 +1,8 @@
 Employee information obtained by get functions:
-name: Bob Lewis
+Name: Bob Lewis
 salary: 300.00
-gross sales: 5000.00
-commission: 0.04
+Gross Sales: 5000.00
+Commission: 0.04
 
 Updated employee information from function toString:
 Name: Bob Lewis
@@ -10,4 +10,4 @@ Salary: $300.00
 Gross Sales: $8000.00
 Commission Rate: 0.10
 
-earnings: $1100.00
+Earnings: $1100.00
