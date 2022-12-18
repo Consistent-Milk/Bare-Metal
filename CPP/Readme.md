@@ -1,3 +1,5 @@
+- Added boost and fmt through MSYS2 in mingw64 environment. This changes the way how fmt has been used up to now.
+
 -> Compiled using --std=gnu++23 (Important because many methods are not implemented in the default selection,
 which is usually --std=gnu++17)
 
