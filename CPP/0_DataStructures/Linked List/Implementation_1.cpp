@@ -25,7 +25,7 @@ int main(void)
         maker = node;
     }
 
-    file.open("LinkedListTraversal.txt", std::ios::out);
+    file.open("Implementation_1.txt", std::ios::out);
     file << "Linked List Traversal:\n";
     // Traversing the linked list
     ListNode *traverser = &l1;
