@@ -1,6 +1,7 @@
 // STL
 #include <stdexcept>
 // TPL
+#define FMT_HEADER_ONLY
 #include <fmt/format.h>
 // CH
 #include "SalariedEmployee.hpp"

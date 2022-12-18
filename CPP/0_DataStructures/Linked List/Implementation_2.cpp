@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 // TPL
+#define FMT_HEADER_ONLY
 #include <fmt/format.h>
 
 struct Node

@@ -3,6 +3,7 @@
 #include <random>
 #include <vector>
 // TPL
+#define FMT_HEADER_ONLY
 #include <fmt/format.h>
 
 // function prototype
