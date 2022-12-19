@@ -81,7 +81,7 @@ public:
     {
         DynamicArray<T> result(array_1.size() + array_2.size());
         std::copy(array_1.begin(), array_1.end(), result.begin());
-        std::copy(array_2.being(), array_2.end(), result.begin() + array_1.size());
+        std::copy(array_2.begin(), array_2.end(), result.begin() + array_1.size());
 
         return result;
     }
@@ -104,3 +104,44 @@ public:
         return os.str();
     }
 };
+
+struct student
+{
+public:
+    std::string name;
+    int standard;
+};
+
+std::ostream &operator<<(std::ostream &os, const student &s)
+{
+    return (os << "[Name: " << s.name << ", Standard: " << s.standard << "]");
+}
+
+int main()
+{
+    int nStudents;
+    std::cout << "Enter number of students in class 1 : ";
+    std::cin >> nStudents;
+
+    DynamicArray<student> class1(nStudents);
+    for (int i = 0; i < nStudents; i++)
+    {
+        std::cout << "Enter name and class of student " << i + 1 << ": ";
+        std::string name;
+        int standard;
+        std::cin >> name >> standard;
+        class1[i] = student{name, standard};
+    }
+
+    auto class2 = class1; // Deep copy
+
+    std::cout << "Second class after initialized using first array : " << class2.toString() << std::endl;
+
+    auto class3 = class1 + class2;
+    // Combines both classes and creates a bigger one
+
+    std::cout << "Combined class : ";
+    std::cout << class3.toString() << std::endl;
+
+    return 0;
+}
