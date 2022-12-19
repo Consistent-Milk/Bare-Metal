@@ -1,24 +1,22 @@
-// STL
-#include <stdexcept>
-// TPL
-#define FMT_HEADER_ONLY
-#include <fmt/format.h>
-// CH
 #include "SalariedEmployee.hpp"
 
-// Constructor definition
+// constructor
 SalariedEmployee::SalariedEmployee(std::string_view name, double salary)
     : m_name{name}
 {
     setSalary(salary);
 }
 
-// Setter Definitions
+// set name
 void SalariedEmployee::setName(std::string_view name)
 {
-    m_name = name;
+    m_name = name; // should validate
 }
 
+// return name
+std::string SalariedEmployee::getName() const { return m_name; }
+
+// set salary
 void SalariedEmployee::setSalary(double salary)
 {
     if (salary < 0.0)
@@ -29,25 +27,15 @@ void SalariedEmployee::setSalary(double salary)
     m_salary = salary;
 }
 
-// Getter Definitions
-std::string SalariedEmployee::getName() const
-{
-    return m_name;
-}
+// return salary
+double SalariedEmployee::getSalary() const { return m_salary; }
 
-double SalariedEmployee::getSalary() const
-{
-    return m_salary;
-}
+// calculate earnings
+double SalariedEmployee::earnings() const { return getSalary(); }
 
-double SalariedEmployee::earnings() const
-{
-    return getSalary();
-}
-
+// return string representation of SalariedEmployee object
 std::string SalariedEmployee::toString() const
 {
-    std::string str = fmt::format("Name: {}\nSalary: ${:.2f}\n", getName(), getSalary());
-
-    return str;
+    return fmt::format("name: {}\nsalary: ${:.2f}\n", getName(),
+                       getSalary());
 }
