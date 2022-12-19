@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib>
 
-namespace data_structures
+namespace ds
 {
     namespace linked_list
     {
@@ -188,7 +188,7 @@ namespace data_structures
 
 int main()
 {
-    data_structures::linked_list::list l;
+    ds::linked_list::list l;
     int choice = 0;
     int x = 0;
     std::string s;
@@ -210,7 +210,7 @@ int main()
             std::cout << "\nEnter the element to be inserted : ";
             std::cin >> s;
 
-            if (data_structures::linked_list::isDigit(s))
+            if (ds::linked_list::isDigit(s))
             {
                 x = std::stoi(s);
                 l.push_back(x);
@@ -223,7 +223,7 @@ int main()
         case 2:
             std::cout << "\nEnter the element to be removed : ";
             std::cin >> s;
-            if (data_structures::linked_list::isDigit(s))
+            if (ds::linked_list::isDigit(s))
             {
                 x = std::stoi(s);
                 l.erase(x);
@@ -236,10 +236,10 @@ int main()
         case 3:
             std::cout << "\nEnter the element to be searched : ";
             std::cin >> s;
-            if (data_structures::linked_list::isDigit(s))
+            if (ds::linked_list::isDigit(s))
             {
                 x = std::stoi(s);
-                std::shared_ptr<data_structures::linked_list::link> found =
+                std::shared_ptr<ds::linked_list::link> found =
                     l.search(x);
             }
             else
