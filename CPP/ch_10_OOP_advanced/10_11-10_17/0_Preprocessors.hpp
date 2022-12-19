@@ -1,0 +1,10 @@
+#pragma once
+// STL
+#include <iostream>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <stdexcept>
+// TPL
+#define FMT_HEADER_ONLY
+#include <fmt/format.h>

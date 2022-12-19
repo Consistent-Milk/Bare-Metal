@@ -97,7 +97,10 @@
         "semaphore": "cpp",
         "pointers": "cpp",
         "cinttypes": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "cwctype": "cpp",
+        "numbers": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/CMAKE"
 }
