@@ -1,0 +1,76 @@
+Concept
+------------------------------------------------------------------------------
+A 'struct' is a C++ data structure that can be used to store together elements of different data types. It works as a user defined data type. In other words, 'struct' creates a new user defined data type that groups different data types in a single data type.
+------------------------------------------------------------------------------
+
+
+Initialization Syntax
+------------------------------------------------------------------------------
+struct struct_name
+{
+    dtype_1 member_1;
+    dtype_2 member_2;
+    ..........
+    dtype_n member_n;
+};
+
+Here struct_name is the identifier and this specific example shows a struct of n different members of n different data types.
+------------------------------------------------------------------------------
+
+
+Creating Struct Instances
+------------------------------------------------------------------------------
+struct_name variable_name;
+
+This creates an instance of the struct 'struct_name' and is assigned to the variable 'variable_name'.
+------------------------------------------------------------------------------
+
+
+Accessing Struct Members
+------------------------------------------------------------------------------
+After creating a struct instance, the members of the instance can be accessed using the dot(.) operator. 
+
+For example,
+struct_name v; (Initialization)
+v.member_1; (Accessing member_1)
+
+*It should be noted that by default all members will have garbage values if not initialized when defining the struct.
+------------------------------------------------------------------------------
+
+
+Accessing and Setting Values to Struct Members
+------------------------------------------------------------------------------
+If a struct is initialized as below, 
+
+struct_name v;
+
+Then using the dot(.) operator followed by assignment(=) operator, we can access and set the value of a member of a struct,
+
+Example:
+struct my_struct
+{
+    int member_1;
+    std::string member_2{"My Name"};
+};
+
+my_struct v;
+
+v.member_1 = 10 (Assings member_1 of int data type the value of 10, which initially was not initialized and thus had garbage value)
+v.member_2 (Will return the default value set when defining my_struct, in this case that will be "My Name" of data type std::string)
+-------------------------------------------------------------------------------
+
+
+Some advanced Topics Related to 'struct'
+-------------------------------------------------------------------------------
+1. Defining pointer variables that points to a struct (Example_2)
+2. Usings structs as functions arguments (Example_3)
+3. Self referential structs (Example_4)
+4. structs with a constructor (Example_4)
+-------------------------------------------------------------------------------
+
+
+References to check out for more information
+-------------------------------------------------------------------------------
+1. https://www.fluentcpp.com/2018/06/15/should-structs-have-constructors-in-cpp/
+2. https://www.guru99.com/cpp-structures.html
+-------------------------------------------------------------------------------

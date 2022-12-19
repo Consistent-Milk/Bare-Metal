@@ -14,6 +14,9 @@ struct ListNode
 int main(void)
 {
     std::fstream file;
+
+    // This uses the constructor of ListNode and
+    // performs operations l1.val = 8; l1.next = NULL
     ListNode l1(8);
 
     // Making a Linked List of values
@@ -26,7 +29,7 @@ int main(void)
         maker = node;
     }
 
-    file.open("Implementation_1.txt", std::ios::out);
+    file.open("Example_4.txt", std::ios::out);
     file << "Linked List Traversal:\n";
     // Traversing the linked list
     ListNode *traverser = &l1;

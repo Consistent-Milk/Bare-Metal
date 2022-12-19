@@ -1,0 +1,21 @@
+Accessing default values of PersonGarbage and Person:
+
+PersonGarbage p1
+age: -296072128
+name: 
+
+Person p2
+age: 0
+name: Person
+
+Setting new values to all members of p1 and p2
+
+Accessing new values of PersonGarbage and Person:
+
+PersonGarbage p1
+age: 20
+name: John Doe
+
+Person p2
+age: 20
+name: Jane Doe
