@@ -100,7 +100,8 @@
         "string_view": "cpp",
         "*.tcc": "cpp",
         "cwctype": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "source_location": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/CMAKE"
 }

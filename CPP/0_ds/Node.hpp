@@ -1,22 +1,26 @@
+#pragma once
 #include "Preprocessors.hpp"
 
 namespace ds
 {
+    template <typename T>
     class Node
     {
     private:
-        // Value stored in the current code
-        int nodeValue;
-        // Pointer to the next node in the link
-        std::shared_ptr<Node> next;
+        T nodeValue;                   // Value stored in the current code
+        std::shared_ptr<Node<T>> next; // Pointer to the next node in the link
 
     public:
-        // Getter
-        int value();
+        T value()
+        {
+            return nodeValue;
+        }
 
-        // Getter
-        std::shared_ptr<Node> &nextNode();
+        std::shared_ptr<Node> &nextNode()
+        {
+            return next;
+        }
 
-        explicit Node(int value = 0);
+        Node(T value = NULL) : nodeValue(value), next(nullptr) {}
     };
 }

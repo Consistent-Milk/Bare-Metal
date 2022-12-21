@@ -1,0 +1,58 @@
+Basic Concept
+--------------------------------------------------------------------------------
+The word 'class' is a reserved keyword in C++. It is used to define a 'class' data type. Object Oriented Programming(OOP) is based on designing programs and applications using this special user-defined data type. 
+
+C++ supports using 'struct' data structure to store different types of data into one combined data type, it also allows the use of custom constructors for 'struct' data types. The key thing that seperates 'struct' data structure from a 'class' is that a class not only supports storage of data, but also supports storing methods that can manipulate or operate on those stored data. 
+--------------------------------------------------------------------------------
+
+
+Dichotomy of Class and Object
+--------------------------------------------------------------------------------
+To understand how and why classes are important we first have to look through some core concepts and definitions. The following four definitions describe the relation between a Class and an Object and furthermore what is meant by methods and attributes of a Class:
+
+Class 
+-----
+Classes are user-defined data types that act as the blueprint for individual objects, attributes and methods.
+
+Object
+------
+Objects are instances of a class created with specifically defined data. Objects can correspond to real-world objects or an abstract entity. When class is defined initially, the description is the only object that is defined.
+
+Method
+------
+Methods are functions that are defined inside a class that describe the behaviors of an object. Each method contained in class definitions starts with a reference to an instance object. Additionally, the subroutines contained in an object are called instance methods. Programmers use methods for reusability or keeping functionality encapsulated inside one object at a time.
+
+Attribute
+---------
+Attributes are defined in the class template and represent the state of an object. Objects will have data stored in the attributes field. Class attributes belong to the class itself.
+
+Some Definitions
+----------------
+Class variables – belong to the class as a whole; there is only one copy of each one
+Instance variables or attributes – data that belongs to individual objects; every object has its own copy of each one
+Member variables – refers to both the class and instance variables that are defined by a particular class
+Class methods – belong to the class as a whole and have access to only class variables and inputs from the procedure call
+Instance methods – belong to individual objects, and have access to instance variables for the specific object they are called on, inputs, and class variables
+--------------------------------------------------------------------------------
+
+
+
+Core Concepts of OOP
+--------------------------------------------------------------------------------
+Now that we have a basic theoretical understanding of what a class is supposed to be, we also need to understand how Classes are supposed to be used when instantiating them as Objects and what core concepts those Objects are supposed to maintain:
+
+Encapsulation
+-------------
+This principle states that all important information is contained inside an object and only select information is exposed. The implementation and state of each object are privately held inside a defined class. Other objects do not have access to this class or the authority to make changes. They are only able to call a list of public functions or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
+
+Abstraction
+-----------
+Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. The derived class can have its functionality extended. This concept can help developers more easily make additional changes or additions over time.
+
+Inheritance
+-----------
+Classes can reuse code from other classes. Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
+
+Polymorphism
+------------
+Objects are designed to share behaviors and they can take on more than one form. The program will determine which meaning or usage is necessary for each execution of that object from a parent class, reducing the need to duplicate code. A child class is then created, which extends the functionality of the parent class. Polymorphism allows different types of objects to pass through the same interface.
