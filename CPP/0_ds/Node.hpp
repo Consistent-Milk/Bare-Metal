@@ -16,7 +16,7 @@ namespace ds
             return nodeValue;
         }
 
-        std::shared_ptr<Node> &nextNode()
+        std::shared_ptr<Node<T>> &nextNode()
         {
             return next;
         }

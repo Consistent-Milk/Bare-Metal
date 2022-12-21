@@ -12,9 +12,9 @@ namespace ds
         std::shared_ptr<Node<T>> endNode;
 
     public:
-        LinkedList(T val)
+        LinkedList()
         {
-            startNode = std::make_shared<Node<T>>(val);
+            startNode = std::make_shared<Node<T>>();
             endNode = nullptr;
         }
 
@@ -44,9 +44,8 @@ namespace ds
             }
             else
             {
-                std::shared_ptr<Node<T>> temp = std::make_shared<Node<T>>(new_node_value);
-                temp->nextNode() = startNode->nextNode();
-                startNode->nextNode() = temp;
+                endNode->nextNode() = std::make_shared<Node<T>>(new_node_value);
+                endNode = endNode->nextNode();
             }
         }
 

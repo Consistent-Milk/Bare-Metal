@@ -1,0 +1,17 @@
+Basic Concepts
+--------------------------------------------------------------------------------
+An operator in a programming language is a reserved symbol that takes one or more inputs to produce a new output. For example, 2 + 3 = 5, here '+' is the operator, and in C++ it operates on the integer data type 2 and 3 to return the value 5. '+' is a binary operator because it takes two input to produce a new output. In C++ there are Unary(one input, one output), binary(two input, one output) and ternary(three input, one output) operators.
+
+Operator overloading is an advanced programming technique that is used to customize the input output behavior of the reserved operator symbols.
+--------------------------------------------------------------------------------
+
+
+Rules and Restrictions of Operator Overloading (R1)
+--------------------------------------------------------------------------------
+-> An operator's precedence cannot be changed by overloading.
+-> An operator's grouping cannot be changed by overloading.
+-> An operator's 'arity' cannot be changed by overloading. Overloaded unary and binary operators will remain unary and binary operators, the only thing that will change is the logic they implement. (The only C++ ternary operator ?: cannot be overloaded)
+-> Only existing operator's can be overloaded
+-> Operators cannot be overloaded to change how they work on fundamental data types (such as int).
+-> Operator overloading only works with objects of user-defined data types or a mix of an object of user-defined data type and an object of a fundamental type.
+-> When overloading (), [], ->, or =, the operator overloading function must be defined as a class a member.

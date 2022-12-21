@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    LinkedList l = LinkedList("AB");
+    LinkedList<int> l;
 
-    l.append("CD");
-    l.append("EF");
+    l.append(1);
+    l.append(2);
 
     l.display();
 }

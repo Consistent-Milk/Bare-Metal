@@ -1,0 +1,9 @@
+s1: 'Happy'
+s2: ' Birthday'
+s3: ''
+v: 'Hello'
+s3 is empty; assigning s1 to s3 using the copy assignment operator
+s3: 'Happy'
+s1.substr(0,14): 'Happy Birthday'
+
+s1.substr(15): 'to You. Have a great day!'
