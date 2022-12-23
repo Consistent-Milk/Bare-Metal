@@ -1,0 +1,13 @@
+Concepts
+--------------------------------------------------------------------------------
+Modern C++ dynamic memory management is based on smart pointers and the concept of RAII(Resource Acquisition Is Initialization). 
+
+RAII
+----
+For any resource that must be returned to the system when the program is done using it, the program should, 
+-> Create the object as a local variable in a function. In the local scope the object's constructor should acquire the resource while initializing the object. 
+-> Use the object as necessary
+-> When the function call terminates, then the object also goes out of scope and the object's destructor should release the resource to free store.
+
+Smart Pointers
+--------------
