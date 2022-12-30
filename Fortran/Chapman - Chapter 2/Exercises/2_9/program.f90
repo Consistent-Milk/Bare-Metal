@@ -1,4 +1,8 @@
 PROGRAM triangle
+
+    ! Author : Mahmudul Hasan
+    ! Program Written : 30th December 2022
+
     IMPLICIT NONE
 
     REAL, PARAMETER :: PI = 3.1416

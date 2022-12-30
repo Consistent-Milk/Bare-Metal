@@ -1,4 +1,7 @@
 PROGRAM total_pay
+    
+    ! Author : Mahmudul Hasan
+    ! Program Written : 30th December 2022
 
     IMPLICIT NONE
 
